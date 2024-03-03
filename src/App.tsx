@@ -1,14 +1,18 @@
 import React from "react";
 import "./App.css";
+import HomePage from "./components/homePage/HomePage";
+import styled from "styled-components";
 
-type AppTypes = {
-  firstVal: number;
-  secondVal: string;
-  thirdVal?: number;
+const AppComponent = styled.div`
+  text-align: center;
+`;
+
+const App: React.FC = () => {
+  return (
+    <AppComponent>
+      <HomePage />
+    </AppComponent>
+  );
 };
-
-function App() {
-  return <div className="App">Portdolio</div>;
-}
 
 export default App;
